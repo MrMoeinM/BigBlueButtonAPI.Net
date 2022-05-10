@@ -236,5 +236,10 @@ namespace BigBlueButtonAPI.Core
         /// Default guestPolicy=ALWAYS_ACCEPT. Will set the guest policy for the meeting. The guest policy determines whether or not users who send a join request with guest=true will be allowed to join the meeting. Possible values are ALWAYS_ACCEPT, ALWAYS_DENY, and ASK_MODERATOR.
         /// </summary>
         public string guestPolicy { get; set; }
+
+
+        public int? meetingExpireWhenLastUserLeftInMinutes { get; set; }
+
+        public int? meetingExpireIfNoUserJoinedInMinutes { get; set; }
     }
 }
